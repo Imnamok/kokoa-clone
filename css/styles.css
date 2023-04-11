@@ -39,11 +39,6 @@ body {
   border: none;
 }
 
-#login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
-}
-
 #login-form input::placeholder {
 }
 
@@ -52,6 +47,18 @@ body {
 }
 
 #login-form input[type="submit"] {
+  cursor: pointer;
+  margin-bottom: 13px;
+  padding: 15px 0px;
+  border-radius: 5px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input[value="Sign Up"] {
   background-color: var(--yellow);
   cursor: pointer;
   margin-bottom: 13px;
