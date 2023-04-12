@@ -1,10 +1,20 @@
-@import "reset.css";
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-@import "status-bar.css";
-@import "variables.css";
+
+/* Screens */
+@import "/css/screens/reset.css";
+@import "/css/screens/variables.css";
+@import "/css/screens/styles.css";
+@import "/css/screens/friends.css";
+
+/* Components */
+@import "/css/components/status-bar.css";
+@import "/css/components/nav-bar.css";
+@import "/css/components/scrren-header.css";
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #2e363e;
 }
 
 .welcome-header {
@@ -37,9 +47,6 @@ body {
   font-size: 18px;
   margin-bottom: 30px;
   border: none;
-}
-
-#login-form input::placeholder {
 }
 
 #login-form input:focus {
