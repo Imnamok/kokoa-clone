@@ -6,12 +6,17 @@
 @import "/css/screens/variables.css";
 @import "/css/screens/styles.css";
 @import "/css/screens/friends.css";
+@import "/css/screens/find.css";
+@import "/css/screens/more.css";
 
 /* Components */
 @import "/css/components/status-bar.css";
 @import "/css/components/nav-bar.css";
 @import "/css/components/scrren-header.css";
 @import "/css/components/user-components.css ";
+@import "/css/components/badge.css";
+@import "/css/components/dot.css";
+@import "/css/components/icon-row.css";
 
 body {
   font-family: "Open Sans", sans-serif;
