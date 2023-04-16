@@ -8,3 +8,12 @@
 .settings__link {
   color: #2e363e;
 }
+
+a:link {
+  color: #2e363e;
+  text-decoration: none;
+}
+
+a:visited {
+  color: transparent;
+}

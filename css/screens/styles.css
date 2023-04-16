@@ -8,6 +8,8 @@
 @import "/css/screens/friends.css";
 @import "/css/screens/find.css";
 @import "/css/screens/more.css";
+@import "/css/screens/settings.css";
+@import "/css/screens/chat.css";
 
 /* Components */
 @import "/css/components/status-bar.css";
@@ -17,6 +19,7 @@
 @import "/css/components/badge.css";
 @import "/css/components/dot.css";
 @import "/css/components/icon-row.css";
+@import "/css/components/alt-screen-header.css";
 
 body {
   font-family: "Open Sans", sans-serif;

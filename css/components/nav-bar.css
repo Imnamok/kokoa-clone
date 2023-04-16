@@ -17,6 +17,20 @@
   position: relative;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+
+  100% {
+    transition: none;
+  }
+}
+
 .nav__notification {
   background-color: tomato;
   width: 20px;
@@ -31,6 +45,7 @@
   position: absolute;
   left: 20px;
   bottom: 19px;
+  animation: notificationAnimation 3s ease-in-out infinite;
 }
 
 .nav__notificationdot {
@@ -46,3 +61,31 @@
   bottom: 27px;
 }
 
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btns {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btns:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav__btns:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.nav__btns:last-child {
+  animation-delay: 0.6s;
+}
