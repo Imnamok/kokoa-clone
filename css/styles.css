@@ -1,3 +1,37 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+@import "styles.css";
+@import "reset.css";
+
+/* Screens */
+@import "screens/variables.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/scrren-header.css";
+@import "components/user-components.css ";
+@import "components/badge.css";
+@import "components/dot.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #2e363e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
 .welcome-header {
   margin: 90px 0px;
   text-align: center;
@@ -61,30 +95,3 @@
   font-size: 13px;
   font-weight: 600;
 }
-
-@keyframes hideSplashScreen {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-#splash-screen {
-  background-color: var(--yellow);
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
-  animation: hideSplashScreen 1s ease-in-out forwards;
-  animation-delay: 1s;
-}
-
-
