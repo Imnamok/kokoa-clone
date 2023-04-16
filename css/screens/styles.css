@@ -2,26 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 /* Screens */
-@import "/css/screens/reset.css";
-@import "/css/screens/variables.css";
-@import "/css/screens/styles.css";
-@import "/css/screens/login.css";
-@import "/css/screens/friends.css";
-@import "/css/screens/find.css";
-@import "/css/screens/more.css";
-@import "/css/screens/settings.css";
-@import "/css/screens/chat.css";
+@import "css/screens/reset.css";
+@import "css/screens/variables.css";
+@import "css/screens/styles.css";
+@import "css/screens/login.css";
+@import "css/screens/friends.css";
+@import "css/screens/find.css";
+@import "css/screens/more.css";
+@import "css/screens/settings.css";
+@import "css/screens/chat.css";
 
 /* Components */
-@import "/css/components/status-bar.css";
-@import "/css/components/nav-bar.css";
-@import "/css/components/scrren-header.css";
-@import "/css/components/user-components.css ";
-@import "/css/components/badge.css";
-@import "/css/components/dot.css";
-@import "/css/components/icon-row.css";
-@import "/css/components/alt-screen-header.css";
-@import "/css/components/no-mobile.css  ";
+@import "css/components/status-bar.css";
+@import "css/components/nav-bar.css";
+@import "css/components/scrren-header.css";
+@import "css/components/user-components.css ";
+@import "css/components/badge.css";
+@import "css/components/dot.css";
+@import "css/components/icon-row.css";
+@import "css/components/alt-screen-header.css";
+@import "css/components/no-mobile.css  ";
 
 body {
   font-family: "Open Sans", sans-serif;
