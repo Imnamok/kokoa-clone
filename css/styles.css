@@ -50,6 +50,8 @@ body {
 }
 
 .welcome-header__text {
+  display: flex;
+  flex-direction: column;
   width: 60%;
   opacity: 0.7;
 }
@@ -83,8 +85,8 @@ body {
   transition: border-color 0.3s ease-in-out;
 }
 
-#login-form input[value="Sign Up"] {
-  background-color: var(--yellow);
+#login-form input[value="회원 가입"] {
+  background-color: #e0f14e;
   cursor: pointer;
   margin-bottom: 13px;
   padding: 15px 0px;

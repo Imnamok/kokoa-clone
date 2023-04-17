@@ -3,16 +3,17 @@
   <head>
     <link rel="stylesheet" href="css/screens/styles.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="hybe-logo/hybe4.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Talk</title>
+    <title>HIVE Talk</title>
   </head>
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
         <span
-          >Male_Cat<i class="fa-solid fa-cat" style="color: #eeebd9"></i
+          >Male_Cat<i class="fa-solid fa-cat" style="color: rebeccapurple"></i
         ></span>
         <i class="fa-sharp fa-solid fa-wifi"></i>
       </div>
@@ -27,24 +28,25 @@
       </div>
     </div>
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a Kokoa Account, log in with your email or phone number.
-      </p>
+      <h1 class="welcome-header__title">하이브 톡에 오신 것을 환영합니다.</h1>
+      <div class="welcome-header__text">
+        <span>계정을 보유하고 계시다면 </span>
+        <span>이메일과 비밀번호를 입력해주세요! :)</span>
+      </div>
     </header>
 
     <form action="friends.html" method="get" id="login-form">
-      <input name="username" required placeholder="Email" type="email" />
+      <input name="username" required placeholder="이메일" type="email" />
       <input
         name="password"
         type="password"
         required
-        placeholder="Password"
+        placeholder="비밀번호"
         minlength="10"
       />
-      <input type="submit" value="Log In" />
-      <input type="submit" value="Sign Up" />
-      <a href="#"> Find Kokoa Accoung or Password</a>
+      <input type="submit" value="로그인" />
+      <input type="submit" value="회원 가입" />
+      <a href="#"> 계정 또는 비밀번호 찾기</a>
     </form>
 
     <div id="no-mobile__width">
@@ -55,7 +57,9 @@
       <span>화면 높이가 너무 작습니다! 키워주세요!😵😵</span>
     </div>
 
-    <div id="splash-screen"></div>
+    <div id="splash-screen">
+      <img src="hybe-logo/hybe1.png" />
+    </div>
 
     <script
       src="https://kit.fontawesome.com/46d58f205e.js"
