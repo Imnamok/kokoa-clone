@@ -31,6 +31,20 @@
   }
 }
 
+@keyframes notificationdotAnimation {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
 .nav__notification {
   background-color: tomato;
   width: 20px;
@@ -45,7 +59,7 @@
   position: absolute;
   left: 20px;
   bottom: 19px;
-  animation: notificationAnimation 3s ease-in-out infinite;
+  animation: notificationAnimation 5s ease-in-out infinite;
 }
 
 .nav__notificationdot {
@@ -58,7 +72,8 @@
   align-items: center;
   position: absolute;
   left: 27px;
-  bottom: 27px;
+  bottom: 25px;
+  animation: notificationdotAnimation 1.5s ease-in-out infinite;
 }
 
 @keyframes appearBtnAnimation {
