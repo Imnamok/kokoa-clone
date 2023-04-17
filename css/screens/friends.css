@@ -1,18 +1,38 @@
-#friends-display-link {
-  text-align: center;
-  display: block;
-  background-color: #fafafa;
-  padding: 15px 0px;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: -15px;
+.screen2 {
+  width: 100%;
+  height: 85%;
+  overflow-x: scroll;
 }
 
-#friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
-  padding-right: 5px;
-  padding-left: 5px;
+.logo-box {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-box__field {
+  display: block;
+  margin: 0px var(--horizontal-space);
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#friends-display-link {
+  background-color: whitesmoke;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#friends-display-link img {
+  background-size: contain;
+  width: 100%;
+  height: 70px;
+  padding: 10px 0px;
 }
 
 .friends-screen {
@@ -20,7 +40,7 @@
 }
 
 .friends-screen__channel {
-  margin-top: 25px;
+  margin-top: 15px;
   border-top: var(--main-border);
   padding-top: 15px;
 }
@@ -28,13 +48,25 @@
 .friends-screen__channel-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 13px;
-  color: rgba(0, 0, 0, 1);
+  margin-bottom: 15px;
   font-size: 18px;
+}
+
+.friends-screen__channel-header span {
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.friends-screen__channel-header__artist span {
+  font-weight: 700;
 }
 
 .friends-screen__channel-header i {
   cursor: pointer;
+}
+
+.friends-screen__channel-header__cafe span {
+  font-weight: 700;
 }
 
 @keyframes hideSplashScreen {
@@ -49,12 +81,12 @@
 }
 
 #splash-screen img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 200px;
 }
 
 #splash-screen {
-  background-color: var(--staythisway);
+  background-color: #f7f7f7;
   position: absolute;
   height: 100vh;
   width: 100vw;

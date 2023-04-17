@@ -1,11 +1,23 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+}
+
+.user-component__box {
+  width: 100%;
+  height: 380px;
+  overflow: scroll;
+}
+
+.user-component__artist {
+  width: 100%;
+  overflow: scroll;
 }
 
 .user-component__avatar {
@@ -38,11 +50,16 @@
   align-items: center;
 }
 
+.user-component__subtitle-phone {
+  color: whitesmoke;
+}
+
 .user-component__profile-box {
-  width: 210px;
+  width: 170px;
   height: 25px;
   border: 1px solid black;
-  background-color: #37bdf0;
+  background-color: whitesmoke;
+  font-weight: 700;
   border-radius: 30px;
   display: flex;
   justify-content: space-between;
@@ -52,20 +69,18 @@
 .user-component__profile-box span {
   display: block;
   padding-left: 6px;
-  color: var(--staythisway2);
+  color: #000000;
 }
 
 .user-component__profile-box a {
   display: flex;
   align-items: center;
   padding-right: 7px;
+  color: #000000;
 }
 
 .user-component__profile-box i:hover {
   transform: scale(1.1);
-}
-
-.user-component__subtitle:nth-child(3) {
 }
 
 .user-component__avatar--xl {
@@ -84,7 +99,8 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.4);
+  color: whitesmoke;
+  opacity: 0.7;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -99,7 +115,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid tomato;
+  border: 2px solid whitesmoke;
   width: 16px;
   height: 16px;
   border-radius: 50%;

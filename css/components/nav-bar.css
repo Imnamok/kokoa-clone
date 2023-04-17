@@ -46,14 +46,13 @@
 }
 
 .nav__notification {
-  background-color: #37bdf0;
+  background-color: var(--staythisway);
   width: 20px;
   height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  color: white;
   font-size: 15px;
   font-weight: 500;
   position: absolute;
@@ -62,8 +61,12 @@
   animation: notificationAnimation 5s ease-in-out infinite;
 }
 
+.nav__notification-remain {
+  color: var(--staythisway-2);
+}
+
 .nav__notificationdot {
-  background-color: #37bdf0;
+  background-color: var(--staythisway);
   width: 6px;
   height: 6px;
   border-radius: 3px;
