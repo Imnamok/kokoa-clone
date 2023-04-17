@@ -10,13 +10,15 @@
   <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>Male_Cat</span>
+        <span>Male_Cat<i class="fa-solid fa-cat"></i></span>
+
         <i class="fa-sharp fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>12:29</span>
       </div>
       <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
         <span>110%</span>
         <i class="fa-solid fa-battery-full"></i>
         <i class="fa-solid fa-bolt"></i>
@@ -28,8 +30,9 @@
         <a href="chats.html"> <i class="fa-solid fa-angle-left fa-2x"></i> </a>
       </div>
 
-      <div class="alt-header__column">
-        <h1 class="alt-header__title">숯냥이</h1>
+      <div class="alt-header__column alt-header__name">
+        <span class="alt-header__title">플로버 톡방</span>
+        <h4>1,229</h4>
       </div>
 
       <div class="alt-header__column chat-header__column">
@@ -46,13 +49,24 @@
         <i class="fa-solid fa-angle-right"></i>
       </div>
 
-      <div class="message-row">
-        <img src="profile_photo/me.jpg" />
+      <div class="message-row message-row--own">
         <div class="message-row__content">
-          <span class="message__author">숯냥이</span>
           <div class="message__info">
-            <span class="message__bubble">안녕?</span>
-            <span class="message__time">21:27</span>
+            <span class="message__bubble"
+              >안녕하세요! 이번에 팬 카페 가입하게 된 Male_Cat입니다!</span
+            >
+            <span class="message__time">21:30</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img src="fromis_9/플로버.png" />
+        <div class="message-row__content">
+          <span class="message__author">플로버 팬 카페 회장</span>
+          <div class="message__info">
+            <span class="message__bubble">안녕하세요!</span>
+            <span class="message__time">21:35</span>
           </div>
         </div>
       </div>
@@ -60,8 +74,24 @@
       <div class="message-row message-row--own">
         <div class="message-row__content">
           <div class="message__info">
-            <span class="message__bubble">안녕! 잘 지내?</span>
-            <span class="message__time">21:30</span>
+            <span class="message__bubble"
+              >팬미팅 참석하려고 하는데 일정이 어떻게 되나요?</span
+            >
+            <span class="message__time">21:37</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img src="fromis_9/플로버.png" />
+        <div class="message-row__content">
+          <span class="message__author">플로버 팬 카페 회장</span>
+          <div class="message__info">
+            <span class="message__bubble">
+              금일 16:00에 프로미스나인 팬미팅 예정 있습니다! 많은 참석
+              바랍니다~~😍</span
+            >
+            <span class="message__time">21:45</span>
           </div>
         </div>
       </div>
@@ -73,7 +103,7 @@
       </div>
 
       <div class="reply__column">
-        <input type="text" placeholder="Write a message..." />
+        <input type="text" placeholder="메시지를 입력해주세요!" />
         <i class="fa-solid fa-face-kiss-wink-heart fa-xl"></i>
         <button>
           <i class="fa-solid fa-arrow-up fa-xl"> </i>
@@ -82,11 +112,11 @@
     </form>
 
     <div id="no-mobile__width">
-      <span>Your screen is too big...</span>
+      <span>화면이 너무 크니 줄여주세요..!😵😵</span>
     </div>
 
     <div id="no-mobile__height">
-      <span>Your screen is too small...</span>
+      <span>화면 높이가 너무 작습니다! 키워주세요!😵😵</span>
     </div>
 
     <script

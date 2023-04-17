@@ -16,6 +16,45 @@
   position: relative;
 }
 
+.screen-header__icons .fa-magnifying-glass:hover {
+  cursor: pointer;
+  will-change: transform;
+  animation: scaleGlass 1s ease-in-out infinite;
+}
+
+@keyframes scaleGlass {
+  0% {
+    transform: none;
+  }
+
+  66% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  cursor: pointer;
+  will-change: transform;
+  animation: pingpongMusic 1s ease-in-out infinite;
+}
+
+@keyframes pingpongMusic {
+  0% {
+    transform: none;
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
 @keyframes rotateGear {
   from {
   }

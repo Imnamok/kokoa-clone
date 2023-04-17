@@ -13,6 +13,7 @@
   width: 33%;
 }
 
+
 .status-bar__column:first-child span {
   margin-right: 5px;
 }
@@ -30,4 +31,8 @@
 
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
+}
+
+.status-bar__column .fa-signal {
+  margin: 0px 2px;
 }

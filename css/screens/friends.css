@@ -28,8 +28,13 @@
 .friends-screen__channel-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
-  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 13px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+}
+
+.friends-screen__channel-header i {
+  cursor: pointer;
 }
 
 @keyframes hideSplashScreen {
@@ -43,8 +48,13 @@
   }
 }
 
+#splash-screen img {
+  width: 500px;
+  height: 500px;
+}
+
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--staythisway);
   position: absolute;
   height: 100vh;
   width: 100vw;

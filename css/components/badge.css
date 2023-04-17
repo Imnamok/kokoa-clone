@@ -1,5 +1,5 @@
 .badge {
-  background-color: tomato;
+  background-color: #37bdf0;
   width: 20px;
   height: 20px;
   display: flex;
@@ -10,3 +10,17 @@
   font-size: 15px;
   font-weight: 500;
 }
+
+.gear__dot {
+  background-color: #37bdf0;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+

@@ -12,6 +12,16 @@
   background-color: #abc1d1;
 }
 
+#chat-screen .alt-header__name {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#chat-screen .alt-header__name h4 {
+  margin: 7px;
+}
+
 #chat-screen .status-bar {
   z-index: 2;
 }
@@ -32,12 +42,20 @@
   }
 }
 
+.chat-header__column i {
+  cursor: pointer;
+}
+
 .main-chat {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   animation: fadeIn 0.8s linear;
+}
+
+.chat__timestamp i {
+  cursor: pointer;
 }
 
 .chat__timestamp {
@@ -130,6 +148,7 @@
 
 .reply i {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .reply input {
