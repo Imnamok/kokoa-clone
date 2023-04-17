@@ -1,6 +1,7 @@
 /* Fonts */
+/*
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
+*/
 @import "styles.css";
 @import "reset.css";
 
@@ -24,7 +25,7 @@
 @import "components/no-mobile.css";
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Kakao", sans-serif;
   color: #2e363e;
 }
 
