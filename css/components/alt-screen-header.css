@@ -29,6 +29,12 @@
   justify-content: flex-end;
 }
 
+.alt-header__column .fa-magnifying-glass:hover {
+  cursor: pointer;
+  will-change: transform;
+  animation: scaleGlass 1s ease-in-out infinite;
+}
+
 /*
 .alt-header__column:last-child span:not(:first-child) {
   margin-left: 20px;
