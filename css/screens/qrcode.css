@@ -24,7 +24,7 @@
 .qrlogin-detail span {
   margin-bottom: 30px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .qrcode-box img {
@@ -33,8 +33,9 @@
 }
 
 .return-login {
+  font-size: 18px;
   padding-top: 30px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .return-login:hover {

@@ -28,9 +28,10 @@
 @import "components/no-mobile.css";
 
 body {
-  background-color: rgba(10, 10, 10, 1);
+  background-color: rgba(5, 5, 5, 1);
   height: 100vh;
   font-family: "Noto Sans KR", sans-serif;
   color: white;
   box-sizing: border-box;
+  overflow-x: scroll;
 }
