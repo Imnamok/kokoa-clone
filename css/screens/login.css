@@ -12,7 +12,7 @@
 
 .welcome-header__title {
   margin-bottom: 50px;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 600;
 }
 
@@ -21,7 +21,7 @@
   flex-direction: column;
   width: 60%;
   opacity: 0.8;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .login-field {
