@@ -23,8 +23,8 @@
 }
 
 .logo__field img {
-  width: 300px;
-  height: 150px;
+  width: 350px;
+  height: 175px;
 }
 .login-field {
   display: flex;
@@ -126,11 +126,15 @@ input[type="checkbox" i] {
 }
 
 input[type="checkbox"] + label:before {
-  content: "";
+  content: "✔";
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid black;
+  color: var(--gray);
+  border: 2px solid var(--gray);
   border-radius: 50%;
   vertical-align: middle;
 }
@@ -141,12 +145,12 @@ input[type="checkbox"] + label {
 
 input[type="checkbox"]:checked + label:before {
   content: "✔";
-  background-color: black;
+  background-color: var(--hyper-lemon);
   border-color: black;
   text-align: center;
   line-height: 20px;
   font-size: 15px;
-  color: white;
+  color: black;
 }
 
 .login-detail1 {
@@ -163,21 +167,21 @@ input[type="checkbox"]:checked + label:before {
   margin-bottom: 2px;
 }
 
-#login-form input[value="로그인"] {
+#login-form input[value="HYBE 로그인"] {
   width: 100%;
   background-color: rgba(245, 255, 0, 0.5);
   cursor: pointer;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding: 13px 0px;
+  padding: 15px 0px;
   border-radius: 5px;
   border: none;
   font-weight: 600;
   font-size: 25px;
 }
 
-#login-form input[value="로그인"]:hover {
-  background-color: rgb(245, 255, 0);
+#login-form input[value="HYBE 로그인"]:hover {
+  background-color: rgb(245, 255, 0, 1);
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -185,13 +189,13 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px 0px;
-  padding-top: 17px;
+  padding-top: 15px;
   border-radius: 5px;
   border: none;
   font-weight: 600;
@@ -212,7 +216,7 @@ input[type="checkbox"]:checked + label:before {
 .login__qr__field__title {
   color: white;
   margin-left: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .login-subtitle {
@@ -244,7 +248,6 @@ input[type="checkbox"]:checked + label:before {
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
-  padding: 0px 5px;
   color: black;
 }
 
