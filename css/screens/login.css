@@ -1,0 +1,148 @@
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header__title {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.welcome-header__text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+.login-field {
+  display: flex;
+  width: 100%;
+}
+
+.login-box {
+  margin: 0px 25px;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+
+.login-box:hover {
+  border: 2px solid whitesmoke;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.id-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.id-box__field {
+  width: 100%;
+  display: flex;
+}
+
+.id-box__icon {
+  display: flex;
+  align-items: center;
+}
+
+.id-box__id {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 1);
+  margin-right: 30px;
+}
+
+.id-box__id input {
+  margin-left: 10px;
+  padding: 15px 0px;
+  background-color: rgba(10, 10, 10, 1);
+  color: whitesmoke;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.id-box__id input:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+#login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  width: 100%;
+  font-size: 20px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid red(0, 0, 0, 1);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input[value="로그인"] {
+  width: 100%;
+  background-color: rgba(255, 255, 79, 0.7);
+  cursor: pointer;
+  margin-bottom: 13px;
+  padding: 15px 0px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+
+#login-form input[value="로그인"]:hover {
+  background-color: rgb(252, 255, 79);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.login-subtitle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.login-subtitle-1,
+.login-subtitle-2 {
+  opacity: 0.5;
+}
+
+.login-subtitle-1:hover {
+  opacity: 1;
+}
+
+.login-subtitle-2:hover {
+  opacity: 1;
+}
+
+.login-subtitle i {
+  margin-right: 3px;
+}
+
+#login-form a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0px 5px;
+}

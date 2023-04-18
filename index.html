@@ -31,23 +31,60 @@
       <h1 class="welcome-header__title">하이브 톡에 오신 것을 환영합니다.</h1>
       <div class="welcome-header__text">
         <span>계정을 보유하고 계시다면 </span>
-        <span>이메일과 비밀번호를 입력해주세요! :)</span>
+        <span>아이디와 비밀번호를 입력해주세요.</span>
       </div>
     </header>
 
-    <form action="friends.html" method="get" id="login-form">
-      <input name="username" required placeholder="이메일" type="email" />
-      <input
-        name="password"
-        type="password"
-        required
-        placeholder="비밀번호"
-        minlength="10"
-      />
-      <input type="submit" value="로그인" />
-      <input type="submit" value="회원 가입" />
-      <a href="#"> 계정 또는 비밀번호 찾기</a>
-    </form>
+    <div class="login-field">
+      <section class="login-box">
+        <form action="friends.html" method="get" id="login-form">
+          <div class="id-box">
+            <div class="id-box__field">
+              <div class="id-box__icon">
+                <i class="fa-regular fa-id-card fa-xl"></i>
+              </div>
+              <div class="id-box__id">
+                <input
+                  name="username"
+                  required
+                  placeholder="아이디"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="id-box">
+            <div class="id-box__field">
+              <div class="id-box__icon">
+                <i class="fa-solid fa-key fa-xl"></i>
+              </div>
+              <div class="id-box__id">
+                <input
+                  name="password"
+                  required
+                  placeholder="비밀번호"
+                  type="text"
+                  minlength="8"
+                />
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" value="로그인" />
+          <div class="login-subtitle">
+            <div class="login-subtitle-1">
+              <a href="#">
+                <i class="fa-solid fa-lock"> </i> 아이디 · 비밀번호 찾기
+              </a>
+            </div>
+            <div class="login-subtitle-2">
+              <a href="#"><i class="fa-solid fa-user-plus"></i> 회원 가입 </a>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
 
     <div id="no-mobile__width">
       <span>화면이 너무 크니 줄여주세요..!😵😵</span>
