@@ -6,13 +6,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings - HIVE</title>
+    <title>Log Out - HIVE</title>
   </head>
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
         <span
-          >Male_Cat<i class="fa-solid fa-cat" style="color: #e8d581"></i
+          >Male_Cat<i class="fa-solid fa-cat" style="color: springgreen"></i
         ></span>
         <i class="fa-sharp fa-solid fa-wifi"></i>
       </div>
@@ -27,9 +27,9 @@
       </div>
     </div>
 
-    <header class="alt-header">
+    <header class="alt-header blur">
       <div class="alt-header__column">
-        <a href="more.html">
+        <a href="settings.html">
           <i class="fa-solid fa-angle-left fa-2x"></i>
         </a>
       </div>
@@ -45,7 +45,7 @@
 
     <header class="screen-header"></header>
 
-    <main class="main-screen">
+    <main class="main-screen blur">
       <ul class="settings-list">
         <li class="settings__setting">
           <div class="settings__setting-column">
@@ -80,32 +80,30 @@
         </li>
       </ul>
 
-      <a href="logout.html">
-        <div class="log-out">
-          <button class="log-out__btn">
-            <i class="fa-sharp fa-solid fa-right-from-bracket"></i> 로그아웃
-          </button>
-        </div>
-      </a>
+      <div class="log-out">
+        <button class="log-out__btn">
+          <i class="fa-sharp fa-solid fa-right-from-bracket"></i> 로그아웃
+        </button>
+      </div>
     </main>
 
-    <nav class="nav">
+    <nav class="nav blur">
       <ul class="nav__list">
         <li class="nav__btns">
-          <a class="nav__link" href="friends.html">
+          <a class="nav__link">
             <img src="hybe-logo/hybe4.png" />
           </a>
         </li>
         <li class="nav__btns">
-          <a class="nav__link" href="chats.html"
-            ><span class="nav__notification badge"
-              ><span class="nav__notification-remain">1</span></span
-            >
+          <a class="nav__link">
+            <span class="nav__notification badge">
+              <span class="nav__notification-remain">1</span>
+            </span>
             <i class="fa-regular fa-comment fa-2x" style="color: black"></i>
           </a>
         </li>
         <li class="nav__btns">
-          <a class="nav__link" href="find.html">
+          <a class="nav__link">
             <i
               class="fa-solid fa-magnifying-glass fa-2x"
               style="color: black"
@@ -113,13 +111,33 @@
           </a>
         </li>
         <li class="nav__btns">
-          <a class="nav__link" href="more.html">
+          <a class="nav__link">
             <div class="nav__notificationdot"></div>
             <i class="fa-solid fa-ellipsis fa-2x" style="color: black"></i>
           </a>
         </li>
       </ul>
     </nav>
+
+    <div class="logout__page">
+      <div class="logout__message">
+        <div class="logout__message-box">로그아웃 하시겠습니까?</div>
+      </div>
+
+      <div class="logout__answer">
+        <a href="index.html" class="logout__answer__ag">
+          <div>
+            <i class="fa-solid fa-door-open"></i>
+          </div>
+        </a>
+
+        <a href="settings.html" class="logout__answer__disag">
+          <div>
+            <i class="fa-solid fa-door-closed"></i>
+          </div>
+        </a>
+      </div>
+    </div>
 
     <div id="no-mobile__width">
       <span>화면이 너무 크니 줄여주세요..!😵😵</span>

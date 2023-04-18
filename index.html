@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HIVE Talk</title>
   </head>
-  <body>
+  <body class="login-bg">
     <div class="status-bar">
       <div class="status-bar__column">
         <span
@@ -27,15 +27,14 @@
         <i class="fa-solid fa-bolt" style="color: #f7e600"></i>
       </div>
     </div>
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">하이브 톡에 오신 것을 환영합니다.</h1>
-      <div class="welcome-header__text">
-        <span>계정을 보유하고 계시다면 </span>
-        <span>아이디와 비밀번호를 입력해주세요.</span>
+
+    <header class="logo">
+      <div class="logo__field">
+        <img src="hybe-logo/hybe2.png" />
       </div>
     </header>
 
-    <div class="login-field">
+    <main class="login-field">
       <section class="login-box">
         <form action="friends.html" method="get" id="login-form">
           <div class="id-box">
@@ -71,20 +70,60 @@
             </div>
           </div>
 
+          <div class="login-detail">
+            <div class="login-detail__field1">
+              <div class="login-checkbox">
+                <input id="check1" type="checkbox" />
+                <label for="check1"></label>
+              </div>
+              <div class="login-detail-1">
+                <span>로그인 상태 유지</span>
+              </div>
+            </div>
+          </div>
+
           <input type="submit" value="로그인" />
+
+          <a href="qrcode.html">
+            <div class="login__qr">
+              <div class="login__qr__field">
+                <i class="fa-sharp fa-solid fa-qrcode fa-lg"></i>
+                <div class="login__qr__field__title">
+                  <span> QR코드 로그인 </span>
+                </div>
+              </div>
+            </div>
+          </a>
+
           <div class="login-subtitle">
             <div class="login-subtitle-1">
               <a href="#">
-                <i class="fa-solid fa-lock"> </i> 아이디 · 비밀번호 찾기
+                <i class="fa-solid fa-lock"></i>
+                아이디 · 비밀번호 찾기
               </a>
             </div>
+
             <div class="login-subtitle-2">
-              <a href="#"><i class="fa-solid fa-user-plus"></i> 회원 가입 </a>
+              <a href="#">
+                <i class="fa-solid fa-user-plus"></i>
+                회원 가입
+              </a>
             </div>
           </div>
         </form>
       </section>
-    </div>
+    </main>
+
+    <footer class="screen-footer">
+      <div class="screen-footer__field">
+        <div class="screen-footer__copy">
+          <i class="fa-regular fa-copyright fa-lg"></i>
+          <img src="hybe-logo/hybe1.png" />
+          <h6>All Rights Reserved.</h6>
+        </div>
+        <div class="screen-footer__site"></div>
+      </div>
+    </footer>
 
     <div id="no-mobile__width">
       <span>화면이 너무 크니 줄여주세요..!😵😵</span>
@@ -92,10 +131,6 @@
 
     <div id="no-mobile__height">
       <span>화면 높이가 너무 작습니다! 키워주세요!😵😵</span>
-    </div>
-
-    <div id="splash-screen">
-      <img src="hybe-logo/hybe1.png" />
     </div>
 
     <script

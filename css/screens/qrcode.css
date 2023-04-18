@@ -1,0 +1,47 @@
+.qrlogin-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qrcode-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--hyper-lemon);
+  border-radius: 8px;
+  width: 350px;
+  height: 350px;
+}
+
+.qrlogin-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qrlogin-detail span {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.qrcode-box img {
+  width: 250px;
+  height: 250px;
+}
+
+.return-login {
+  padding-top: 30px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.return-login:hover {
+  color: rgba(0, 0, 0, 1);
+  transition: color 0.5s ease-in-out;
+}
+
+.return-login span {
+  font-weight: 600;
+}

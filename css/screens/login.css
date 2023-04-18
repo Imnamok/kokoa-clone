@@ -2,28 +2,30 @@
   padding: 0px var(--horizontal-space);
 }
 
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
+.login-bg {
+  background-color: white;
+  color: black;
+}
+
+.logo {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.logo__field {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.welcome-header__title {
-  margin-bottom: 50px;
-  font-size: 27px;
-  font-weight: 600;
+.logo__field img {
+  width: 300px;
+  height: 150px;
 }
-
-.welcome-header__text {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  opacity: 0.8;
-  font-size: 18px;
-}
-
 .login-field {
   display: flex;
   width: 100%;
@@ -37,12 +39,12 @@
   align-items: center;
   width: 100%;
   height: 40%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  border: 3px solid rgba(191, 191, 191, 0.4);
   border-radius: 8px;
 }
 
 .login-box:hover {
-  border: 2px solid whitesmoke;
+  border: 3px solid black;
   transition: border-color 0.5s ease-in-out;
 }
 
@@ -50,7 +52,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .id-box__field {
@@ -67,21 +69,19 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: rgba(10, 10, 10, 1);
   margin-right: 30px;
 }
 
 .id-box__id input {
   margin-left: 10px;
   padding: 15px 0px;
-  background-color: rgba(10, 10, 10, 1);
-  color: whitesmoke;
+  background-color: white;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid rgba(191, 191, 191, 0.5);
 }
 
 .id-box__id input:focus {
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 3px solid black;
 }
 
 #login-form {
@@ -97,24 +97,122 @@
 }
 
 #login-form input:not([type="submit"]) {
-  border-bottom: 1px solid red(0, 0, 0, 1);
-  transition: border-color 0.3s ease-in-out;
+  border-bottom: 1px solid black(0, 0, 0, 1);
+  transition: border-color 0.5s ease-in-out;
+}
+
+.login-detail {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.login-detail__field1 {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "✔";
+  background-color: black;
+  border-color: black;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+.login-detail1 {
+  display: flex;
+  align-items: center;
+}
+
+.login-checkbox {
+  margin: 0px 5px;
+}
+
+.login-detail-1 span {
+  opacity: 0.7;
+  margin-bottom: 2px;
 }
 
 #login-form input[value="로그인"] {
   width: 100%;
-  background-color: rgba(255, 255, 79, 0.7);
+  background-color: rgba(245, 255, 0, 0.5);
   cursor: pointer;
-  margin-bottom: 13px;
-  padding: 15px 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 13px 0px;
   border-radius: 5px;
   border: none;
   font-weight: 600;
+  font-size: 25px;
 }
 
 #login-form input[value="로그인"]:hover {
-  background-color: rgb(252, 255, 79);
+  background-color: rgb(245, 255, 0);
   transition: background-color 0.5s ease-in-out;
+}
+
+.login__qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px 0px;
+  padding-top: 17px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.login__qr:hover {
+  background-color: rgba(0, 0, 0, 1);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.login__qr__field {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.login__qr__field__title {
+  color: white;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .login-subtitle {
@@ -130,10 +228,12 @@
 
 .login-subtitle-1:hover {
   opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .login-subtitle-2:hover {
   opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .login-subtitle i {
@@ -145,4 +245,18 @@
   font-size: 13px;
   font-weight: 600;
   padding: 0px 5px;
+  color: black;
+}
+
+.screen-footer img {
+  background-color: white;
+  width: 70px;
+  height: 20px;
+  margin: 70px 10px;
+}
+
+.screen-footer__copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

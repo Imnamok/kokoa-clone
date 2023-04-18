@@ -19,6 +19,24 @@
   margin-right: auto;
 }
 
+@keyframes traslateRight {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateX(-4px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.alt-header__column:first-child:hover {
+  animation: traslateRight 1s ease-in-out infinite;
+}
+
 .alt-header__column:nth-child(2) {
   text-align: center;
 }

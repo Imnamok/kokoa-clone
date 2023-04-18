@@ -2,8 +2,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f9f9fa;
-  padding: 20px 50px;
+  background-color: white;
+  padding: 5px 50px;
   box-sizing: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -15,6 +15,11 @@
 .nav__link {
   color: #2e363e;
   position: relative;
+}
+
+.nav__link img {
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes notificationAnimation {
@@ -46,7 +51,7 @@
 }
 
 .nav__notification {
-  background-color: var(--staythisway);
+  background-color: black;
   width: 20px;
   height: 20px;
   display: flex;
@@ -61,12 +66,8 @@
   animation: notificationAnimation 5s ease-in-out infinite;
 }
 
-.nav__notification-remain {
-  color: var(--staythisway-2);
-}
-
 .nav__notificationdot {
-  background-color: var(--staythisway);
+  background-color: var(--hyper-lemon);
   width: 6px;
   height: 6px;
   border-radius: 3px;
@@ -91,9 +92,22 @@
 }
 
 .nav__btns {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: white;
   transform: translateY(50px);
   opacity: 0;
   animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btns:hover {
+  background-color: var(--gray);
+  transition: background-color 0.4s ease-in-out;
 }
 
 .nav__btns:nth-child(2) {

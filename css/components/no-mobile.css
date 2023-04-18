@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-height: 850px) {
+@media screen and (min-height: 900px) {
   #no-mobile__height {
     display: none;
   }

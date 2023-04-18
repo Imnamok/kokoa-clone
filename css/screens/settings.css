@@ -4,7 +4,7 @@
 
 .settings__setting {
   padding: 20px 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -13,11 +13,27 @@
 }
 
 .settings__setting i {
+  cursor: pointer;
   margin-right: 20px;
   font-size: 22px;
-
 }
 
 .settings__setting-column:last-child {
   opacity: 0.5;
+}
+
+.log-out {
+  display: flex;
+  justify-content: center;
+}
+
+.log-out__btn {
+  background-color: white;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }

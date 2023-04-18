@@ -1,20 +1,19 @@
 :root {
-  --yellow: #fae100;
+  --hyper-lemon: rgb(245, 255, 0);
   --horizontal-space: 25px;
   --main-border: 1px solid #8b95a0;
-  --gray: #8b95a0;
-  --staythisway: #37bdf0;
-  --staythisway-2: #eaec81;
+  --gray: rgb(191, 191, 191);
+
 }
 
 .settings__link {
 }
 
 a:link {
-  color: whitesmoke;
+  color: white;
   text-decoration: none;
 }
 
 a:visited {
-  color: whitesmoke;
+  color: white;
 }
