@@ -2,6 +2,9 @@
 /*
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?&family=Nunito:wght@300;400;700;800;900;1000&display=swap");
+
 @import "styles.css";
 @import "variables.css";
 @import "reset.css";
@@ -10,6 +13,8 @@
 @import "screens/login.css";
 @import "screens/qrcode.css";
 @import "screens/friends.css";
+@import "screens/music.css";
+@import "screens/musicplay.css";
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
@@ -34,4 +39,5 @@ body {
   color: white;
   box-sizing: border-box;
   overflow-x: scroll;
+  background: linear-gradient(to bottom, black, rgba(20, 20, 20, 1));
 }

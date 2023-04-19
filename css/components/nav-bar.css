@@ -107,7 +107,7 @@
 
 .nav__btns:hover {
   background-color: var(--gray);
-  transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .nav__btns:nth-child(2) {
@@ -118,6 +118,10 @@
   animation-delay: 0.4s;
 }
 
-.nav__btns:last-child {
+.nav__btns:nth-child(4) {
   animation-delay: 0.6s;
+}
+
+.nav__btns:last-child {
+  animation-delay: 0.8s;
 }

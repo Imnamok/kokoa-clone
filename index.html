@@ -9,131 +9,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HIVE Talk</title>
   </head>
-  <body class="login-bg">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span
-          >Male_Cat<i class="fa-solid fa-cat" style="color: rebeccapurple"></i
-        ></span>
-        <i class="fa-sharp fa-solid fa-wifi"></i>
+
+  <div class="login-bg">
+    <body>
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span
+            >Male_Cat<i class="fa-solid fa-cat" style="color: rebeccapurple"></i
+          ></span>
+          <i class="fa-sharp fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>12:29</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fa-solid fa-signal"></i>
+          <span>110%</span>
+          <i class="fa-solid fa-battery-full" style="color: #1ec800"></i>
+          <i class="fa-solid fa-bolt" style="color: #f7e600"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <span>12:29</span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fa-solid fa-signal"></i>
-        <span>110%</span>
-        <i class="fa-solid fa-battery-full" style="color: #1ec800"></i>
-        <i class="fa-solid fa-bolt" style="color: #f7e600"></i>
-      </div>
-    </div>
 
-    <header class="logo">
-      <div class="logo__field">
-        <img src="hybe-logo/hybe2.png" />
-      </div>
-    </header>
+      <header class="logo">
+        <div class="logo__field">
+          <a href="https://hybecorp.com/kor/main " target="_blank">
+            <img src="hybe-logo/hybe2.png"
+          /></a>
+        </div>
+      </header>
 
-    <main class="login-field">
-      <section class="login-box">
-        <form action="friends.html" method="get" id="login-form">
-          <div class="id-box">
-            <div class="id-box__field">
-              <div class="id-box__icon">
-                <i class="fa-regular fa-id-card fa-xl"></i>
-              </div>
-              <div class="id-box__id">
-                <input
-                  name="username"
-                  required
-                  placeholder="아이디"
-                  type="text"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="id-box">
-            <div class="id-box__field">
-              <div class="id-box__icon">
-                <i class="fa-solid fa-key fa-xl"></i>
-              </div>
-              <div class="id-box__id">
-                <input
-                  name="password"
-                  required
-                  placeholder="비밀번호"
-                  type="text"
-                  minlength="8"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="login-detail">
-            <div class="login-detail__field1">
-              <div class="login-checkbox">
-                <input id="check1" type="checkbox" />
-                <label for="check1"></label>
-              </div>
-              <div class="login-detail-1">
-                <span>로그인 상태 유지</span>
-              </div>
-            </div>
-          </div>
-
-          <input type="submit" value="HYBE 로그인" />
-
-          <a href="qrcode.html">
-            <div class="login__qr">
-              <div class="login__qr__field">
-                <i class="fa-sharp fa-solid fa-qrcode fa-lg"></i>
-                <div class="login__qr__field__title">
-                  <span> QR코드 로그인 </span>
+      <main class="login-field">
+        <section class="login-box">
+          <form action="friends.html" method="get" id="login-form">
+            <div class="id-box">
+              <div class="id-box__field">
+                <div class="id-box__icon">
+                  <i class="fa-regular fa-id-card fa-xl"></i>
+                </div>
+                <div class="id-box__id">
+                  <input
+                    name="username"
+                    required
+                    placeholder="아이디"
+                    type="text"
+                  />
                 </div>
               </div>
             </div>
-          </a>
 
-          <div class="login-subtitle">
-            <div class="login-subtitle-1">
-              <a href="#">
-                <i class="fa-solid fa-lock"></i>
-                아이디 · 비밀번호 찾기
-              </a>
+            <div class="id-box">
+              <div class="id-box__field">
+                <div class="id-box__icon">
+                  <i class="fa-solid fa-key fa-xl"></i>
+                </div>
+                <div class="id-box__id">
+                  <input
+                    name="password"
+                    required
+                    placeholder="비밀번호"
+                    type="text"
+                    minlength="8"
+                  />
+                </div>
+              </div>
             </div>
 
-            <div class="login-subtitle-2">
-              <a href="#">
-                <i class="fa-solid fa-user-plus"></i>
-                회원 가입
-              </a>
+            <div class="login-detail">
+              <div class="login-detail__field1">
+                <div class="login-checkbox">
+                  <input id="check1" type="checkbox" />
+                  <label for="check1"></label>
+                </div>
+                <div class="login-detail-1">
+                  <span>로그인 상태 유지</span>
+                </div>
+              </div>
             </div>
+
+            <input type="submit" value="HYBE 로그인" />
+
+            <a href="qrcode.html">
+              <div class="login__qr">
+                <div class="login__qr__field">
+                  <i class="fa-sharp fa-solid fa-qrcode fa-lg"></i>
+                  <div class="login__qr__field__title">
+                    <span> QR코드 로그인 </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <div class="login-subtitle">
+              <div class="login-subtitle-1">
+                <a href="#">
+                  <i class="fa-solid fa-lock"></i>
+                  아이디 · 비밀번호 찾기
+                </a>
+              </div>
+
+              <div class="login-subtitle-2">
+                <a href="#">
+                  <i class="fa-solid fa-user-plus"></i>
+                  회원 가입
+                </a>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="screen-footer">
+        <div class="screen-footer__field">
+          <div class="screen-footer__copy">
+            <i class="fa-regular fa-copyright fa-lg"></i>
+            <img src="hybe-logo/hybe1.png" />
+            <h6>All Rights Reserved.</h6>
           </div>
-        </form>
-      </section>
-    </main>
-
-    <footer class="screen-footer">
-      <div class="screen-footer__field">
-        <div class="screen-footer__copy">
-          <i class="fa-regular fa-copyright fa-lg"></i>
-          <img src="hybe-logo/hybe1.png" />
-          <h6>All Rights Reserved.</h6>
+          <div class="screen-footer__site"></div>
         </div>
-        <div class="screen-footer__site"></div>
+      </footer>
+
+      <div id="no-mobile__width">
+        <div id="no-mobile__width-box">
+          <img src="nomobile/promis_9.jpg" />
+          <span>화면이 너무 크니 줄여주세요..!😵😵</span>
+        </div>
       </div>
-    </footer>
 
-    <div id="no-mobile__width">
-      <span>화면이 너무 크니 줄여주세요..!😵😵</span>
-    </div>
+      <div id="no-mobile__height">
+        <div id="no-mobile__height-box">
+          <img src="nomobile/promis.jpg" />
+          <span>화면이 너무 작으니 키워주세요..!😵😵</span>
+        </div>
+      </div>
 
-    
-
-    <script
-      src="https://kit.fontawesome.com/46d58f205e.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <script
+        src="https://kit.fontawesome.com/46d58f205e.js"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </div>
 </html>

@@ -1,0 +1,265 @@
+.music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album {
+  font-family: "nunito";
+  color: black;
+  background-color: white;
+  width: 340px;
+  height: 100%;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 35px;
+  box-shadow: 0px 2px 15px white;
+}
+
+.album i:hover {
+  transform: scale(1.15);
+}
+
+.album-icon-bar {
+  width: 100%;
+}
+
+.album-icon-bar__field {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 25px;
+  padding-top: 50px;
+  cursor: pointer;
+}
+
+.album-mainfield {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-mainfield__thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 35px;
+  box-shadow: 0px 10px 30px rgba(55, 189, 240, 1);
+  cursor: pointer;
+}
+
+.album-mainfield__title {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.album-mainfield__singer {
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.btns .btns__shuffle {
+  background-color: black;
+}
+
+.btns__shuffle,
+.btns__heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  width: 110px;
+  height: 40px;
+  margin: 0px 7px;
+  border-radius: 20px;
+  border: none;
+}
+
+.btns__shuffle {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btns__heart {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btns__shuffle:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 1s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+.btns__heart:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 1s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+.btns__heart:hover > i {
+  color: lightpink;
+  transition: color 0.5s ease-in-out;
+}
+
+.btns__heart i {
+  margin-right: 4px;
+}
+
+.border {
+  margin: 0px 15px;
+  border-bottom: 3px solid var(--gray);
+}
+
+.music-control__box-border {
+  height: 330px;
+  padding: 5px 0px;
+}
+
+.music-field {
+  width: 100%;
+  height: 330px;
+}
+
+.music-list {
+  height: 285px;
+  padding: 5px 0px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.musics {
+  height: 100%;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.musics,
+.music-column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.music-column {
+  height: 75px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.music-column img {
+  justify-content: center;
+  align-items: center;
+}
+
+.music-column i {
+  position: absolute;
+  margin-left: 22px;
+  visibility: hidden;
+}
+
+.musics i {
+  margin-right: 20px;
+}
+
+.music_thumbnail {
+  border-radius: 15px;
+  width: 55px;
+  height: 55px;
+  margin-left: 5px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.music-singer {
+  font-weight: 700;
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+.music-name {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+.musics:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  transform: scale(1.01);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.musics:hover .music_thumbnail {
+  filter: brightness(80%);
+  transition: 0.3s ease-in-out;
+}
+
+.musics:hover .music-column i {
+  visibility: visible;
+}
+
+.controlbox {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.controlbox-field {
+  position: absolute;
+  top: -20px;
+  background-color: black;
+  border-radius: 30px;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controlbox-info {
+  color: white;
+  margin-left: 23px;
+}
+
+.controlbox-info__singer {
+  color: rgba(211, 211, 211, 0.8);
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.controlbox-info__name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.controlbox-control {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.controlbox-control i {
+  margin: 0px 13px;
+  cursor: pointer;
+}

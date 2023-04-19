@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musicplay - HYBE</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span
+          >Male_Cat<i class="fa-solid fa-cat" style="color: #35b9e9"></i
+        ></span>
+        <i class="fa-sharp fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:29</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full" style="color: #1ec800"></i>
+        <i class="fa-solid fa-bolt" style="color: #f7e600"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">
+        Playing
+        <i class="fa-solid fa-music" style="color: var(--hyper-lemon)"> </i>
+      </h1>
+
+      <div class="screen-header__icons">
+        <span> <i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span>
+          <i class="fa-solid fa-user-plus fa-lg" style="color: #fbceb1"></i>
+        </span>
+      </div>
+    </header>
+
+    <div class="music-play">
+      <section class="bg">
+        <div class="bg-icon-bar">
+          <div class="bg-icon-bar__field">
+            <a href="music.html">
+              <i class="fa-solid fa-arrow-left fa-xl" style="color: black"></i>
+            </a>
+            <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+          </div>
+        </div>
+
+        <div class="bg-thumbnail">
+          <img
+            src="/music_thumbnail/stay this way.jpg"
+            class="bg-thumbnail__thumbnail"
+          />
+        </div>
+
+        <div class="bg-infofield">
+          <i
+            class="fa-regular fa-thumbs-down fa-flip-horizontal"
+            style="color: lightpink"
+          ></i>
+          <div class="bg-info">
+            <h1 class="bg-info__name">
+              Stay This Way
+              <h4 class="bg-info__singer">fromis_9</h4>
+            </h1>
+          </div>
+
+          <i class="fa-regular fa-thumbs-up" style="color: lightskyblue"></i>
+        </div>
+
+        <div class="bg-play">
+          <div class="bg-playbar">
+            <div class="bg-playbar__time">
+              <span class="bg-playbar__start">1:56</span>
+              <span class="bg-playbar__end">3:16</span>
+            </div>
+            <input type="range" class="bg-playbar__range" />
+          </div>
+        </div>
+
+        <div class="bg-controlfield">
+          <div class="bg-controlfield__iconbox">
+            <i class="fa-solid fa-repeat" style="color: #dbdbdb"></i>
+            <i class="fa-solid fa-backward-step fa-xl" style="color: black"></i>
+            <div class="bg-controlfield__play">
+              <a
+                href="https://www.youtube.com/watch?v=JC6budcACNE"
+                target="_blank"
+              >
+                <i
+                  class="fa-solid fa-play fa-xl"
+                  style="color: var(--hyper-lemon)"
+                >
+                </i>
+              </a>
+            </div>
+            <i class="fa-solid fa-forward-step fa-xl" style="color: black"></i
+            ><i class="fa-solid fa-shuffle" style="color: #dbdbdb"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btns">
+          <a class="nav__link" href="friends.html">
+            <img src="hybe-logo/hybe4.png" />
+          </a>
+        </li>
+        <li class="nav__btns">
+          <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge">1</span
+            ><i class="fa-regular fa-comment fa-2x" style="color: black"></i
+          ></a>
+        </li>
+
+        <li class="nav__btns">
+          <a class="nav__link" href="music.html">
+            <i class="fa-solid fa-music fa-2x" style="color: black"> </i>
+          </a>
+        </li>
+
+        <li class="nav__btns">
+          <a class="nav__link" href="find.html"
+            ><i
+              class="fa-solid fa-magnifying-glass fa-2x"
+              style="color: black"
+            ></i
+          ></a>
+        </li>
+        <li class="nav__btns">
+          <a class="nav__link" href="more.html"
+            ><div class="nav__notificationdot"></div>
+            <i class="fa-solid fa-ellipsis fa-2x" style="color: black"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile__width">
+      <div id="no-mobile__width-box">
+        <img src="nomobile/promis_9.jpg" />
+        <span>화면이 너무 크니 줄여주세요..!😵😵</span>
+      </div>
+    </div>
+
+    <div id="no-mobile__height">
+      <div id="no-mobile__height-box">
+        <img src="nomobile/promis.jpg" />
+        <span>화면이 너무 작으니 키워주세요..!😵😵</span>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/46d58f205e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
