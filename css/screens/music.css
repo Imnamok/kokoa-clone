@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: scroll;
 }
 
 .album {
@@ -10,8 +11,9 @@
   background-color: white;
   width: 340px;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
   padding-bottom: 50px;
+  margin-bottom: 15px;
   border-radius: 35px;
   box-shadow: 0px 2px 15px white;
 }
@@ -41,12 +43,11 @@
 }
 
 .album-mainfield__thumbnail {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   box-shadow: 0px 10px 30px rgba(55, 189, 240, 1);
   cursor: pointer;
 }

@@ -1,10 +1,64 @@
+.setting__profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.setting__profile-photo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.setting__profile-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting__profile-info h1,
+.setting__profile-info h6 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.setting__profile-info h6 {
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.setting__profile-profile {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.setting__profile-profile:hover {
+  cursor: pointer;
+  color: var(--hyper-lemon);
+  border-color: var(--hyper-lemon);
+  transition: color 0.3s ease-in-out;
+  transition: border-color 0.1s ease-in-out;
+}
+
 .settings-list {
   margin-top: -70px;
 }
 
 .settings__setting {
   padding: 20px 0px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -12,14 +66,39 @@
   justify-content: space-between;
 }
 
+.divide {
+  border-bottom: none;
+  margin-bottom: 30px;
+}
+
+.divideline2 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+}
+
 .settings__setting i {
   cursor: pointer;
-  margin-right: 20px;
-  font-size: 22px;
+  width: 20px;
+  height: 20px;
+}
+
+.settings__setting-column {
+  display: flex;
+}
+
+.settings__setting-column span {
+  margin-left: 20px;
+}
+
+.settings__setting-column:first-child:hover {
+  cursor: pointer;
+  color: var(--hyper-lemon);
+  transition: color 0.3s ease-in-out;
 }
 
 .settings__setting-column:last-child {
   opacity: 0.5;
+  font-weight: 400;
 }
 
 .log-out {
@@ -28,13 +107,14 @@
 }
 
 .log-out__btn {
+  font-family: "Noto Sans KR", sans-serif;
   background-color: white;
   cursor: pointer;
   border: none;
   width: 150px;
   height: 50px;
   border-radius: 8px;
-  font-family: "Noto Sans KR", sans-serif;
+  margin-top: 30px;
   font-weight: 600;
   font-size: 20px;
 }
