@@ -1,8 +1,11 @@
+
+
 .setting__profile {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-top: -30px;
   margin-bottom: 50px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
