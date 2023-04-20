@@ -29,7 +29,7 @@
 
     <header class="alt-header blur">
       <div class="alt-header__column">
-        <a href="settings.html">
+        <a href="more.html">
           <i class="fa-solid fa-angle-left fa-2x"></i>
         </a>
       </div>
@@ -43,22 +43,91 @@
       </div>
     </header>
 
-    <header class="screen-header"></header>
+    <header class="screen-header blur">
+      <div class="setting__profile">
+        <div class="setting__profile-photo">
+          <img src="bang-see-hyuk/bang-profile.png" />
+        </div>
+        <div class="setting__profile-box">
+          <div class="setting__profile-info">
+            <h1>방시혁</h1>
+            <h6>+82 10-1229-1229</h6>
+          </div>
+          <div class="setting__profile-profile">
+            <span>프로필 관리</span>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main class="main-screen blur">
       <ul class="settings-list">
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fa-solid fa-bullhorn"></i>
-            <span>공지사항</span>
+            <div><i class="fa-solid fa-user-lock"></i></div>
+            <span>계정</span>
+          </div>
+          <div class="settings__setting-column">
+            <div><span>Male_Cat@Hive.com</span></div>
+          </div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <div><i class="fa-solid fa-lock"></i></div>
+            <span>개인 / 보안</span>
           </div>
           <div class="settings__setting-column"></div>
         </li>
 
         <li class="settings__setting">
           <div class="settings__setting-column">
+            <div><i class="fa-regular fa-bell"></i></div>
+            <span>알림</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <div><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <span>화면</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <div><i class="fa-solid fa-brush fa-flip-vertical"></i></div>
+            <span>테마</span>
+          </div>
+          <div class="settings__setting-column">
+            <div><span>Basic</span></div>
+          </div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
             <i class="fa-solid fa-flask"></i>
-            <span>실험실</span>
+            <div><span>실험실</span></div>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting divide">
+          <div class="settings__setting-column">
+            <div><i class="fa-solid fa-ellipsis"></i></div>
+            <span>기타</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <div class="divideline2"></div>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bullhorn"></i>
+            <div><span>공지사항</span></div>
           </div>
           <div class="settings__setting-column"></div>
         </li>
@@ -66,7 +135,7 @@
         <li class="settings__setting">
           <div class="settings__setting-column">
             <i class="fa-solid fa-circle-question"></i>
-            <span>고객센터 / 운영정책</span>
+            <div><span>고객센터 / 운영정책</span></div>
           </div>
           <div class="settings__setting-column"></div>
         </li>
@@ -74,36 +143,45 @@
         <li class="settings__setting">
           <div class="settings__setting-column">
             <i class="fa-solid fa-circle-info"></i>
-            <span>앱 관리</span>
+            <div><span>앱 관리</span></div>
           </div>
           <div class="settings__setting-column">최신 버전 12.29</div>
         </li>
       </ul>
 
-      <div class="log-out">
-        <button class="log-out__btn">
-          <i class="fa-sharp fa-solid fa-right-from-bracket"></i> 로그아웃
-        </button>
-      </div>
+      <a href="logout.html">
+        <div class="log-out">
+          <button class="log-out__btn">
+            <i class="fa-sharp fa-solid fa-right-from-bracket"></i> 로그아웃
+          </button>
+        </div>
+      </a>
     </main>
 
     <nav class="nav blur">
       <ul class="nav__list">
         <li class="nav__btns">
-          <a class="nav__link">
+          <a class="nav__link" href="friends.html">
             <img src="hybe-logo/hybe4.png" />
           </a>
         </li>
         <li class="nav__btns">
-          <a class="nav__link">
-            <span class="nav__notification badge">
-              <span class="nav__notification-remain">1</span>
-            </span>
+          <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge"
+              ><span class="nav__notification-remain">1</span></span
+            >
             <i class="fa-regular fa-comment fa-2x" style="color: black"></i>
           </a>
         </li>
+
         <li class="nav__btns">
-          <a class="nav__link">
+          <a class="nav__link" href="music.html">
+            <i class="fa-solid fa-music fa-2x" style="color: black"> </i>
+          </a>
+        </li>
+
+        <li class="nav__btns">
+          <a class="nav__link" href="find.html">
             <i
               class="fa-solid fa-magnifying-glass fa-2x"
               style="color: black"
@@ -111,7 +189,7 @@
           </a>
         </li>
         <li class="nav__btns">
-          <a class="nav__link">
+          <a class="nav__link" href="more.html">
             <div class="nav__notificationdot"></div>
             <i class="fa-solid fa-ellipsis fa-2x" style="color: black"></i>
           </a>
